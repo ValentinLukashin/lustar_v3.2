@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nlApplication
+﻿namespace nlApplication
 {
-    internal class appErrorsHandler
+    /// <summary>
+    /// Класс 'appErrorsHandler'
+    /// </summary>
+    /// <remarks>Элемент для обработки ошибок приложения</remarks>
+    public class appErrorsHandler
     {
     }
 }

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _Application
+﻿namespace nlApplication
 {
+    /// <summary>
+    /// Класс 'appApplication'
+    /// </summary>
+    /// <remarks>Элемент - основа приложений, не работающих с данными и не имеющими интерфейса</remarks>
     public class appApplication
     {
     }

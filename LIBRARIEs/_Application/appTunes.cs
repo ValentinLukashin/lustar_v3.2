@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nlApplication
+﻿namespace nlApplication
 {
-    internal class appTunes
+    /// <summary>
+    /// Класс 'appTunes'
+    /// </summary>
+    /// <remarks>Элемент для работы с настройками приложения. Не наследуется</remarks>
+    public sealed class appTunes
     {
     }
 }

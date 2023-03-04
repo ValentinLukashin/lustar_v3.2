@@ -3,8 +3,8 @@
     /// <summary>
     /// Класс 'appUnitTune'
     /// </summary>
-    /// <remarks>Базовый элемент - настройка приложения</remarks>
-    public class appUnitTune
+    /// <remarks>Элемент - настройка приложения. Только наследуется</remarks>
+    public abstract class appUnitTune
     {
     }
 }

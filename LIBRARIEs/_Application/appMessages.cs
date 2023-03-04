@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nlApplication
+﻿namespace nlApplication
 {
-    internal class appMessages
+    /// <summary>
+    /// Класс 'appMessages'
+    /// </summary>
+    /// <remarks>Элемент для отображения сообщений пользователю. Наследуется только в проекте '_Controls'</remarks>
+    public class appMessages
     {
     }
 }

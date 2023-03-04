@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nlApplication
+﻿namespace nlApplication
 {
-    internal class appEventsHandler
+    /// <summary>
+    /// Класс 'appEventsHandler'
+    /// </summary>
+    /// <remarks>Элемент для обработки основных событий приложений. Наследуется в каждом приложении</remarks>
+    public abstract class appEventsHandler 
     {
     }
 }

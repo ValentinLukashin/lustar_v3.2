@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс 'appUnitError'
     /// </summary>
-    /// <remarks>Базовый элемент - ошибка</remarks>
+    /// <remarks>Элемент - ошибка. Только наследуется</remarks>
     public abstract class appUnitError
     {
     }

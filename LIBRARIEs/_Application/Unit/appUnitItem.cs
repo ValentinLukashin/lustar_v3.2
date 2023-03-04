@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс 'appUnitItem'
     /// </summary>
-    /// <remarks>Базовый элемент для обмена данными между объектами</remarks>
+    /// <remarks>Элемент для обмена данными между объектами. Только наследуется</remarks>
     public abstract class appUnitItem
     {
     }

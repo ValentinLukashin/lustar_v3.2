@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nlApplication
+﻿namespace nlApplication
 {
-    internal class appProtocols
+    /// <summary>
+    /// Класс 'appProtocols'
+    /// </summary>
+    /// <remarks>Элемент для протоколирования событий приложения. Наследуется в приложениях с организацией протоколирования в источник отличный от текстового файла</remarks>
+    public class appProtocols
     {
     }
 }
