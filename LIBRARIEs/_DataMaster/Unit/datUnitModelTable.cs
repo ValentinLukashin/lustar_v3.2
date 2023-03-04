@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс 'datUnitModelTable'
     /// </summary>
-    /// <remarks>Базовый элемент - модель таблицы данных</remarks>
+    /// <remarks>Элемент - модель таблицы данных. Всегда наследуется</remarks>
     public abstract class datUnitModelTable
     {
     }

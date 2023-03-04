@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс 'datUnitDataSource'
     /// </summary>
-    /// <remarks>Базовый элемент - источник данных</remarks>
+    /// <remarks>Элемент - источник данных. Всегда наследуется</remarks>
     public abstract class datUnitDataSource
     {
     }

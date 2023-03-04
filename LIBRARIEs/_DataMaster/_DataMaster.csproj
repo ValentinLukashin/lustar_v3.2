@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="appPathes.cs" />
     <Compile Include="datApplication.cs" />
     <Compile Include="datData.cs" />
     <Compile Include="datPathes.cs" />

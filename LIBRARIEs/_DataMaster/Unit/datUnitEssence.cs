@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс 'datUnitEssence'
     /// </summary>
-    /// <remarks>Базовый элемент - сущность данных</remarks>
+    /// <remarks>Элемент - сущность данных. Всегда наследуется</remarks>
     public abstract class datUnitEssence
     {
     }

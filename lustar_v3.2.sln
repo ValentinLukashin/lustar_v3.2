@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_DataMaster", "LIBRARIEs\_D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Archivators", "LIBRARIEs\_Archivators\_Archivators.csproj", "{6140A7D3-90D3-4B0B-ABDB-71D906ACF89E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIBRARIEs", "LIBRARIEs", "{2CEAB162-FCE8-46C2-AE65-546040AF2DD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59659E31-833F-449C-B171-F00DFDDBFA15} = {2CEAB162-FCE8-46C2-AE65-546040AF2DD8}
+		{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D} = {2CEAB162-FCE8-46C2-AE65-546040AF2DD8}
+		{6140A7D3-90D3-4B0B-ABDB-71D906ACF89E} = {2CEAB162-FCE8-46C2-AE65-546040AF2DD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06A376C8-1D3F-493F-A2CD-0EB644F1D27E}

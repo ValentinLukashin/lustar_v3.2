@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using nlApplication;
 
 namespace nlDataMaster
 {
-    public class datApplication
+    /// <summary>
+    /// Класс 'datApplication'
+    /// </summary>
+    /// <remarks>Элемент - основа приложений работающих с данными, но без интерфейса</remarks>
+    public class datApplication : appApplication
     {
     }
 }

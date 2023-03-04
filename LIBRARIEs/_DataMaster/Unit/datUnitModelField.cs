@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс 'datUnitModelField'
     /// </summary>
-    /// <remarks>Базовый элемент - модель поля из таблицы данных</remarks>
+    /// <remarks>Элемент - модель поля из таблицы данных. Всегда наследуется</remarks>
     public class datUnitModelField
     {
     }
