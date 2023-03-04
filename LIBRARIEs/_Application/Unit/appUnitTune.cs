@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nlApplication.Unit
+﻿namespace nlApplication
 {
-    internal class appUnitTune
+    /// <summary>
+    /// Класс 'appUnitTune'
+    /// </summary>
+    /// <remarks>Базовый элемент - настройка приложения</remarks>
+    public class appUnitTune
     {
     }
 }

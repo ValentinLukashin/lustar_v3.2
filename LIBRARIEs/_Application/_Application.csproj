@@ -56,5 +56,9 @@
     <Compile Include="Unit\appUnitItem.cs" />
     <Compile Include="Unit\appUnitTune.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_Documentation\" />
+    <Folder Include="_Help\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
