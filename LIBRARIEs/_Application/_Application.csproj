@@ -42,6 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="appApplication.cs" />
+    <Compile Include="appErrorsHandler.cs" />
+    <Compile Include="appEventsHandler.cs" />
+    <Compile Include="appMessages.cs" />
+    <Compile Include="appPathes.cs" />
+    <Compile Include="appProtocols.cs" />
+    <Compile Include="appTunes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
