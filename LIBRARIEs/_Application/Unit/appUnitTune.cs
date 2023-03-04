@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _DataMaster
+namespace nlApplication.Unit
 {
-    public class Class1
+    internal class appUnitTune
     {
     }
 }

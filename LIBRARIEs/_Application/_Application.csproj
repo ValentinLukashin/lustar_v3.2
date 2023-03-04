@@ -49,6 +49,12 @@
     <Compile Include="appProtocols.cs" />
     <Compile Include="appTunes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\appTypeDateTime.cs" />
+    <Compile Include="Types\appTypeInt.cs" />
+    <Compile Include="Types\appTypeString.cs" />
+    <Compile Include="Unit\appUnitError.cs" />
+    <Compile Include="Unit\appUnitItem.cs" />
+    <Compile Include="Unit\appUnitTune.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
