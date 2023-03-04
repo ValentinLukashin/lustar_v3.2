@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Application", "LIBRARIEs\_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_DataMaster", "LIBRARIEs\_DataMaster\_DataMaster.csproj", "{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Archivators", "LIBRARIEs\_Archivators\_Archivators.csproj", "{6140A7D3-90D3-4B0B-ABDB-71D906ACF89E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6140A7D3-90D3-4B0B-ABDB-71D906ACF89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6140A7D3-90D3-4B0B-ABDB-71D906ACF89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6140A7D3-90D3-4B0B-ABDB-71D906ACF89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6140A7D3-90D3-4B0B-ABDB-71D906ACF89E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
