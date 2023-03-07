@@ -6,5 +6,6 @@
     /// <remarks>Элемент для работы с набором источников данных</remarks>
     public class datData
     {
+        public string __fDataSourceCurrentAlias = "";
     }
 }
