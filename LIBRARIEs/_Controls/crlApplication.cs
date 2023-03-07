@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace nlControls
 {
+    /// <summary>
+    /// Класс 'crlApplication'
+    /// </summary>
+    /// <remarks>Элемент основа приложений работающих с интерфейсом</remarks>
     public class crlApplication : datApplication
     {
     }
