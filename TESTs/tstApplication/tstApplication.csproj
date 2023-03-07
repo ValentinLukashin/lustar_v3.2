@@ -45,9 +45,20 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tstApplication.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LIBRARIEs\_Application\_Application.csproj">
+      <Project>{59659e31-833f-449c-b171-f00dfddbfa15}</Project>
+      <Name>_Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LIBRARIEs\_Test\_Test.csproj">
+      <Project>{BCBC405F-A13F-4B15-A015-02E749370072}</Project>
+      <Name>_Test</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
