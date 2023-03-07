@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeDb", "SOFT\Trade\Trade
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_System", "LIBRARIEs\_System\_System.csproj", "{87D26A18-E4B8-49FA-A967-9BADEE34A3F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tstApplication", "TESTs\tstApplication\tstApplication.csproj", "{3FA11C2E-78AD-4A8B-8189-C5B81C8998EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{87D26A18-E4B8-49FA-A967-9BADEE34A3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87D26A18-E4B8-49FA-A967-9BADEE34A3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87D26A18-E4B8-49FA-A967-9BADEE34A3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA11C2E-78AD-4A8B-8189-C5B81C8998EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA11C2E-78AD-4A8B-8189-C5B81C8998EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA11C2E-78AD-4A8B-8189-C5B81C8998EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA11C2E-78AD-4A8B-8189-C5B81C8998EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -240,6 +246,7 @@ Global
 		{09504A0D-4FC0-4061-9700-A67304BE6AF8} = {A2470604-4E46-41C0-A8C2-6CBFB45819E4}
 		{1A12B1C6-1CC7-43EC-83D8-3E7F974BCBB1} = {FAF764A0-7EB0-4049-8BC9-F3B4D20B1063}
 		{87D26A18-E4B8-49FA-A967-9BADEE34A3F3} = {2CEAB162-FCE8-46C2-AE65-546040AF2DD8}
+		{3FA11C2E-78AD-4A8B-8189-C5B81C8998EF} = {876B259E-4356-464A-84C7-A4B087ED6CF4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06A376C8-1D3F-493F-A2CD-0EB644F1D27E}
