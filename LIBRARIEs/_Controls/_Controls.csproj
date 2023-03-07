@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="crlApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +54,16 @@
     <Folder Include="FORMs\Service\" />
     <Folder Include="_Documentation\" />
     <Folder Include="_Help\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\_Application\_Application.csproj">
+      <Project>{59659e31-833f-449c-b171-f00dfddbfa15}</Project>
+      <Name>_Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_DataMaster\_DataMaster.csproj">
+      <Project>{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D}</Project>
+      <Name>_DataMaster</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
