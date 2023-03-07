@@ -12,5 +12,9 @@ namespace tstApplication
     /// </summary>
     public class tstApplication : appApplication
     {
+        public static void __mBuild()
+        {
+            __fPrefix = "tst";
+        }
     }
 }

@@ -2,10 +2,6 @@
 using nlTest;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace tstApplication
 {
@@ -16,12 +12,13 @@ namespace tstApplication
     /// <remarks>Элемент для тестирования библиотеки 'appApplication'</remarks>
     internal class Program
     {
+        static tstTest fTest = new tstTest(); // Объект для проверки результатов тестирования
+
         static void Main(string[] args)
         {
-            tstApplication.__fPrefix = "rtl";
             if (tstApplication.__oEventsHandler.__mBegin() == true)
             {
-                mTestApplication();
+                //mTestApplication();
                 mTestTypes();
             }
             tstApplication.__oEventsHandler.__mEnd();
@@ -30,7 +27,29 @@ namespace tstApplication
         /// Тестирование классов составляющих основу приложения
         /// </summary>
         static void mTestApplication()
-        { 
+        {
+            bool vResult = true; // Результат выполнения теста класса
+            bool vReturn = true; // Результат выполнения метода
+
+            #region Проверка обработчика ошибок
+
+            Console.WriteLine("Должно появиться окно с сообщением \n'Тестирование ошибки приложения.'\nПроцедура: 'mTestApplication()'");
+            tstApplication.__mBuild();
+            appUnitError vError = new appUnitError();
+            vError.__fErrorsType = ERRORSTYPES.Application;
+            vError.__fMessage_ = "Тестирование ошибки приложения";
+            vError.__fProcedure = "mTestApplication()";
+            tstApplication.__oErrorsHandler.__mShow(vError);
+
+            #endregion Проверка обработчика ошибок
+
+            vReturn = fTest.__mCompare(tstApplication.__fPrefix, "tst");
+            vResult &= vReturn;
+            Console.WriteLine("tstApplication.__fPrefix".PadRight(90, '.') + (fTest.__mResult() == true ? "OK" : "Error"));
+
+            Console.WriteLine("\nТест класса 'tstApplication'".PadRight(91, '.') + (vResult == true ? "OK" : "Error"));
+
+            Console.Read();
         }
         static void mTestTypes()
         {
@@ -39,14 +58,12 @@ namespace tstApplication
             bool vReturn = true; // Результат выполнения метода
             DateTime vDateTime = new DateTime(2022, 1, 1);
             DateTime vDateTime2 = new DateTime(2022, 1, 1);
-            TimeSpan vTimeSpan = vDateTime - vDateTime2;
+            TimeSpan vTimeSpan;
             int vInt = -1;
             string vString = "";
             string vString2 = "";
             bool vBoolean = false;
             ArrayList vArrayList = new ArrayList();
-
-            tstTest fTest = new tstTest(); // Объект для проверки результатов тестирования
 
             #region appTypeDateTime
 
