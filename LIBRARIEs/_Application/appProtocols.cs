@@ -1,7 +1,8 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-using System.IO;
+﻿using System.IO;
 using System.Windows.Forms;
 using System;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace nlApplication
 {

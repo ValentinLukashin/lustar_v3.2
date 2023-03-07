@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace nlApplication
+namespace _System
 {
-    public class appUnitItem
+    public class Class1
     {
     }
 }

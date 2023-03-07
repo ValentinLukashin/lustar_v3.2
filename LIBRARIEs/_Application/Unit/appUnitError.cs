@@ -105,6 +105,7 @@ namespace nlApplication
         /// <remarks>Перевод сообщения об ошибке на язык интерфейса приложения</remarks>
         public string __fMessage_
         {
+            get { return fMessage; }
             set
             {
                 fMessage = appApplication.__oTunes.__mTranslate(value);
