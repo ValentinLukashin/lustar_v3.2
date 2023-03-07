@@ -83,7 +83,7 @@ namespace nlControls
             return;
         }
 
-        #region - Кнопки управления
+        #region Кнопки управления
 
         /// <summary>
         /// Выполняется при выборе кнопки 'Помощь'
@@ -94,7 +94,6 @@ namespace nlControls
 
             return;
         }
-
         /// <summary>
         /// Выполняется при выборе кнопки 'Помощь' левой кнопкой мыши
         /// </summary>
@@ -237,7 +236,6 @@ namespace nlControls
         {
             set { _cButtonHelp.Image = value; }
         }
-
         /// <summary>
         /// Изображение-логотип области 
         /// </summary>

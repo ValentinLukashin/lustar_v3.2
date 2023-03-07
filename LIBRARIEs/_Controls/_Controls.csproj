@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\crlComponentCheck.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\crlComponentLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -64,7 +67,13 @@
     <Compile Include="Components\crlComponentToolBarButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Components\crlComponentToolBarButtonMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CONTROLs\Areas\crlArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaMessage.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CONTROLs\Panels\crlPanelStatus.cs">

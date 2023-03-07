@@ -54,7 +54,7 @@ namespace nlControls
             return;
         }
         /// <summary>
-        /// Выполняется при первом отображении компонента
+        /// Презентация объекта
         /// </summary>
         protected virtual void _mObjectPresetation()
         {
