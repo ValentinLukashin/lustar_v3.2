@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>124ef8f7-e3c3-4e98-a4ba-144ee5cfa739</ProjectGuid>
+    <ProjectGuid>{124EF8F7-E3C3-4E98-A4BA-144EE5CFA739}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_ResourcesImages</RootNamespace>
-    <AssemblyName>_ResourcesImages</AssemblyName>
+    <RootNamespace>nlResourcesImages</RootNamespace>
+    <AssemblyName>rsim</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,24 +31,429 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\_AccountBalances_32C.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Application\_ApplicationForm_16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Application\_ApplicationGoogle_16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Application\_ApplicationGoogle_32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Application\_ApplicationMSExcel_g16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Application\_ApplicationMSWord_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Application\_ApplicationOffice_16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Application\_ApplicationOffice_32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_Book_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_Book_b32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_Book_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookAdd_b16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookAdd_b32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookEdit_b16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookEdit_b32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookGear_b32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookGo_b32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookInbox_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookOpen_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookOpen_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookRemove_b16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Book\_BookRemove_b32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Camera\_Camera_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_Font_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_FontBold_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_FontColor_32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_FontItalic_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_FontScriptSub_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_FontScriptSuper_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_FontStrikethroungh_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_FontUnderline_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_TextAlignCenter_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_TextAlignLeft_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Correction\_TextAlignRight_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Database\_Database_a16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Database\_Database_a32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Database\_DatabaseChange_a32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Database\_DatabaseCopy_a32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diskette\_Diskette_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_Folder_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_Folder_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_Folder_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderAdd_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDelete_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDelete_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDesktop_b16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDocument_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDocumentAdd_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDocumentEdit_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDocumentRemove_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderDownload_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderEdit_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderEdit_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderGear_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderGearAdd_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderGearEdit_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderGearRemove_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderGearRun_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderImage_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderMusic_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderNode_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderPage_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderPicture_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderRemove_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderTree_a16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderTree_b16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderTree_g16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderTree_r16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderTree_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder\_FolderUser_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Gears\_Gear_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Gears\_Gears_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Lightning\_Lightning_y16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Lock\_LockClose_y16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Lock\_LockOpen_y16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_Page_g16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_Page_w16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_Page_w32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_Page_y16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_Page_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageCopy_w16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageCopy_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageDelete_w16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageDelete_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageDocument_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageEdit_w16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageEdit_w32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageEdit_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageEdit_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageFind_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageGear_w32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageGear_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageInbox_w32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageInBox_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PagePrinter_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageRefresh_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageReload_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageRemove_w16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageRemove_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageRestore_w16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageRestore_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Page\_PageTable_y32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Player\_PlayerPause_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Player\_PlayerPlay_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Player\_PlayerStop_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Printer\_Printer_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Report\_ReportBrowser_32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Report\_ReportExcel_g32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Report\_ReportWord_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Signs\_SignApply_g32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Signs\_SignCross_r32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Signs\_SignExit_r16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Signs\_SignHelp_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Signs\_SignInfo_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Signs\_SignQuestion_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Signs\_SignRefresh_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Smiles\_Smile_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Smiles\_SmileError_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Smiles\_SmileInfo_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Smiles\_SmileQuestion_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Smiles\_SmileWarning_y32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Tables\_TableColumn_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Tables\_TableRowEditMove_b32C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_Barcode_w16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_BasketAdd_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_BasketDelete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_Calculator_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_CalculatorGo_b16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_CheckCash_w16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_LorryGo_y16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Trade\_PriceTag_w16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Users\_User_b16C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Users\_UserEdit_b16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

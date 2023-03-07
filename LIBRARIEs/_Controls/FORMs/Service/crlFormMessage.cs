@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace nlControls.FORMs.Service
+namespace nlControls
 {
-    internal class crlFormMessage
+    public class crlFormMessage : crlForm
     {
     }
 }

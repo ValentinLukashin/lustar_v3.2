@@ -49,10 +49,22 @@
     <Compile Include="Components\crlComponentPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Components\crlComponentPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\crlComponentProgress.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Components\crlComponentSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentToolBarButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlArea.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CONTROLs\Panels\crlPanelStatus.cs">
@@ -66,16 +78,17 @@
     <Compile Include="FORMs\crlForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FORMs\Service\crlFormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\crlTypeColor.cs" />
     <Compile Include="Types\crlTypeFont.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CONTROLs\Areas\" />
     <Folder Include="CONTROLs\Block\" />
     <Folder Include="CONTROLs\Inputs\" />
     <Folder Include="FORMs\Data\" />
-    <Folder Include="FORMs\Service\" />
     <Folder Include="_Documentation\" />
     <Folder Include="_Help\" />
   </ItemGroup>
@@ -87,6 +100,10 @@
     <ProjectReference Include="..\_DataMaster\_DataMaster.csproj">
       <Project>{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D}</Project>
       <Name>_DataMaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_ResourcesImages\_ResourcesImages.csproj">
+      <Project>{124ef8f7-e3c3-4e98-a4ba-144ee5cfa739}</Project>
+      <Name>_ResourcesImages</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
