@@ -34,7 +34,7 @@ namespace nlControls
         {
             SuspendLayout();
 
-            #region /// Настройка компонента
+            #region Настройка компонента
 
             BackColor = Color.Transparent;
             BorderStyle = BorderStyle.None;
@@ -64,7 +64,7 @@ namespace nlControls
         /// </summary>
         protected string _fClassNameFull = "";
 
-        #endregion Внутренние
+        #endregion - Внутренние
 
         #endregion ПОЛЯ
     }

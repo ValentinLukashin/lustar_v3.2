@@ -3,8 +3,7 @@ using System.Windows.Forms;
 
 namespace nlControls
 {
-    /// <summary>
-    /// Класс 'crlComponentPicture'
+    /// <summary>Класс 'crlComponentPicture'
     /// </summary>
     /// <remarks>Компонент - изображение</remarks>
     public class crlComponentPicture : PictureBox
@@ -34,7 +33,7 @@ namespace nlControls
         {
             SuspendLayout();
 
-            #region /// Настройка компонента
+            #region Настройка компонента
 
             SizeMode = PictureBoxSizeMode.Normal;
             TabStop = false;
@@ -65,7 +64,7 @@ namespace nlControls
         /// </summary>
         protected string _fClassNameFull = "";
 
-        #endregion Внутренние
+        #endregion - Внутренние
 
         #endregion ПОЛЯ
     }

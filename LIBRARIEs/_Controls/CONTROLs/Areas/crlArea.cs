@@ -4,10 +4,9 @@ using System.Windows.Forms;
 
 namespace nlControls
 {
-    /// <summary>
-    /// Класс 'crlArea'
+    /// <summary>Класс 'crlArea'
     /// </summary>
-    /// <remarks>Элемент области для работы с данными</remarks>
+    /// <remarks>Абстрактный класс области для работы с данными</remarks>
     public class crlArea : crlComponentSplitter
     {
         #region = МЕТОДЫ
@@ -15,7 +14,7 @@ namespace nlControls
         #region - Поведение
 
         /// <summary>
-        /// Сборка объекта
+        /// Загрузка контрола
         /// </summary>
         protected override void _mObjectAssembly()
         {
@@ -83,7 +82,7 @@ namespace nlControls
             return;
         }
 
-        #region Кнопки управления
+        #region - Кнопки управления
 
         /// <summary>
         /// Выполняется при выборе кнопки 'Помощь'
@@ -94,6 +93,7 @@ namespace nlControls
 
             return;
         }
+
         /// <summary>
         /// Выполняется при выборе кнопки 'Помощь' левой кнопкой мыши
         /// </summary>
@@ -236,6 +236,7 @@ namespace nlControls
         {
             set { _cButtonHelp.Image = value; }
         }
+
         /// <summary>
         /// Изображение-логотип области 
         /// </summary>
@@ -251,10 +252,10 @@ namespace nlControls
         public string __fHeaderText_
         {
             get { return fHeaderText; }
-            set
+            set 
             {
                 fHeaderText = value;
-                _cHeaderLabel.__fCaption_ = crlApplication.__oTunes.__mTranslate(value);
+                _cHeaderLabel.__fCaption_ = crlApplication.__oTunes.__mTranslate(value); 
             }
         }
         /// <summary>
@@ -263,7 +264,7 @@ namespace nlControls
         public bool __fHeaderVisible_
         {
             get { return !Panel1Collapsed; }
-            set
+            set 
             {
                 Panel1Collapsed = !value;
             }
@@ -290,6 +291,6 @@ namespace nlControls
         /// </summary>
         public event EventHandler __eButtonDebug_ClickRight;
 
-        #endregion СОБЫТИЯ
+        #endregion = СОБЫТИЯ
     }
 }

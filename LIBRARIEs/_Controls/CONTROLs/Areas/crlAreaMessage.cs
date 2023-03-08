@@ -5,20 +5,18 @@ using System.Windows.Forms;
 
 namespace nlControls
 {
-    /// <summary>
-    /// Класс 'crlAreaMessage'
+    /// <summary>Класс 'crlAreaMessage'
     /// </summary>
     /// <remarks>Область для отображения сообщений пользователю</remarks>
     public class crlAreaMessage : crlArea
     {
         #region = МЕТОДЫ
 
-        #region - Поведение
+        #region - События
 
         #region Объект
 
-        /// <summary>
-        /// Сборка объекта
+        /// <summary>Загрузка контрола
         /// </summary>
         protected override void _mObjectAssembly()
         {
@@ -70,7 +68,7 @@ namespace nlControls
                 _cButtonDetails.Image = global::nlResourcesImages.Properties.Resources._BookOpen_b32C;
                 _cButtonDetails.ImageScaling = ToolStripItemImageScaling.None;
                 _cButtonDetails.ToolTipText = "[ Ctrl + L ]\n" + crlApplication.__oTunes.__mTranslate("Подробно");
-
+                
                 { /// Кнопки решения "Дополнительно"
                     _cButtonDetailHide = _cButtonDetails.DropDownItems.Add(crlApplication.__oTunes.__mTranslate("Сообщение"));
                     _cButtonDetailHide.Click += _cButtonDetailHide_Click;
@@ -96,15 +94,13 @@ namespace nlControls
                 _cCheck.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 _cCheck.Location = new Point(crlInterface.__fIntervalHorizontal * 2, 60);
             }
-            // _cLabel
-            {
-                _cLabel.AutoSize = true;
-                _cLabel.Location = new Point(crlInterface.__fIntervalHorizontal * 2, crlInterface.__fIntervalVertical * 2);
-                _cLabel.Size = new Size(_cSplitter.Panel2.Width - crlInterface.__fIntervalHorizontal * 4, _cSplitter.Panel2.Height - crlInterface.__fIntervalVertical * 4);
-                _cLabel.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-            }
 
             #endregion Настройка компонентов
+
+            _cLabel.AutoSize = true; 
+            _cLabel.Location = new Point(crlInterface.__fIntervalHorizontal * 2, crlInterface.__fIntervalVertical * 2);
+            _cLabel.Size = new Size(_cSplitter.Panel2.Width - crlInterface.__fIntervalHorizontal * 4, _cSplitter.Panel2.Height - crlInterface.__fIntervalVertical * 4);
+            _cLabel.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
 
             ResumeLayout();
 
@@ -115,25 +111,24 @@ namespace nlControls
             _cSplitter.SplitterDistance = 120;
 
             _cButtonDetailHide.PerformClick();
-
-            return;
         }
-        /// <summary>
-        /// Презентация объекта
-        /// </summary>
         protected override void _mObjectPresetation()
         {
             base._mObjectPresetation();
             _cSplitter.SplitterDistance = 100;
-            if (FindForm() != null)
-                FindForm().WindowState = FormWindowState.Normal;
         }
         #endregion Объект
 
         #region Кнопки управления
 
-        /// <summary>
-        /// Выполняется при выборе кнопки 'Ok, Да'
+        protected override void OnCreateControl()
+        {
+            base.OnCreateControl();
+            if (FindForm() != null)
+                FindForm().WindowState = FormWindowState.Normal;
+        }
+
+        /// <summary>Выполняется при выборе кнопки 'Ok, Да'
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -164,8 +159,7 @@ namespace nlControls
             Form vForm = FindForm();
             vForm.Close();
         }
-        /// <summary>
-        /// Выполняется при выборе кнопки 'Отмена, Нет'
+        /// <summary>Выполняется при выборе кнопки 'Отмена, Нет'
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -184,8 +178,7 @@ namespace nlControls
             Form vForm = FindForm();
             vForm.Close();
         }
-        /// <summary>
-        /// Выполняется при выборе кнопки 'Помощь'
+        /// <summary>Выполняется при выборе кнопки 'Помощь'
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -194,8 +187,9 @@ namespace nlControls
             crlForm vForm = FindForm() as crlForm;
             vForm.__mHelp();
         }
-        /// <summary>
-        /// Выполняется при выборе кнопки 'Подробно / Сообщение'
+
+
+        /// <summary>Выполняется при выборе кнопки 'Подробно / Сообщение'
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -205,8 +199,7 @@ namespace nlControls
             if (FindForm() != null)
                 FindForm().WindowState = FormWindowState.Normal;
         }
-        /// <summary>
-        /// Выполняется при выборе кнопки 'Подробно / Детали'
+        /// <summary>Выполняется при выборе кнопки 'Подробно / Детали'
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -218,12 +211,11 @@ namespace nlControls
 
         #endregion Кнопки управления
 
-        #endregion Поведение
+        #endregion - События
 
         #region - Процедуры
 
-        /// <summary>
-        /// Выполняется при выборе кнопки 'Применить'
+        /// <summary>* Выполняется при выборе кнопки 'Применить'
         /// </summary>
         public void __mPressButtonApply()
         {
@@ -240,80 +232,66 @@ namespace nlControls
 
         #region - Атрибуты
 
-        /// <summary>
-        /// Значение возвращаемый формой
+        /// <summary>Значение возвращаемый формой
         /// </summary>
         public DialogResult _fResult = DialogResult.None;
 
-        #endregion Атрибуты
+        #endregion - Атрибуты
 
         #region - Внутренние
 
-        /// <summary>
-        /// Сообщение
+        /// <summary>Сообщение
         /// </summary>
         public string fMessage = "";
-        /// <summary>
-        /// Детали
+        /// <summary>Детали
         /// </summary>
         public string _fMessageDetail = "";
-        /// <summary>
-        /// Вид сообщения
+        /// <summary>Вид сообщения
         /// </summary>
         private MESSAGESTYPES fMessageType = MESSAGESTYPES.None;
 
-        #endregion Внутренние
+        #endregion - Внутренние
 
         #region - Компоненты
 
-        /// <summary>
-        /// Разделитель панелей
+        /// <summary>* Разделитель панелей
         /// </summary>
         protected SplitContainer _cSplitter = new SplitContainer();
 
-        /// <summary>
-        /// Кнопка 'Ok, Да'
+        /// <summary>* Кнопка 'Ok, Да'
         /// </summary>
         protected crlComponentToolBarButton _cButtonApply = new crlComponentToolBarButton();
-        /// <summary>
-        /// Кнопка 'Отмена, Нет'
+        /// <summary>* Кнопка 'Отмена, Нет'
         /// </summary>
         protected crlComponentToolBarButton _cButtonCancel = new crlComponentToolBarButton();
-        /// <summary>
-        /// Кнопка 'Подробно'
+        /// <summary>* Кнопка 'Подробно'
         /// </summary>
         protected crlComponentToolBarButtonMenu _cButtonDetails = new crlComponentToolBarButtonMenu();
 
-        /// <summary>
-        /// Меню 'Создать'
+        /// <summary>* Меню 'Создать'
         /// </summary>
         protected ToolStripItem _cButtonDetailHide;
-        /// <summary>
-        /// Меню 'Изменить'
+        /// <summary>* Меню 'Изменить'
         /// </summary>
         protected ToolStripItem _cButtonDetailShow;
 
-        /// <summary>
-        /// Картинка вида сообщения 
+        /// <summary>* Картинка вида сообщения 
         /// </summary>
         protected crlComponentPicture _cPicture = new crlComponentPicture();
-        /// <summary>
-        /// Включатель
+        /// <summary>* Включатель
         /// </summary>
         protected crlComponentCheck _cCheck = new crlComponentCheck();
-        /// <summary>
-        /// Текст
+        /// <summary>* Текст
         /// </summary>
         protected crlComponentLabel _cLabel = new crlComponentLabel();
 
-        #endregion Компоненты
+        #endregion - Компоненты
 
         #endregion ПОЛЯ
 
         #region = СВОЙСТВА
 
-        /// <summary>
-        /// Текст сообщения
+        /// <summary>* Текст сообщения
         /// </summary>
         public string __fMessage_
         {
@@ -323,8 +301,7 @@ namespace nlControls
                 _cLabel.Text = fMessage;
             }
         }
-        /// <summary>
-        /// Вид сообщения
+        /// <summary>* Вид сообщения
         /// </summary>
         public MESSAGESTYPES __fMessageType_
         {
@@ -395,24 +372,21 @@ namespace nlControls
                 }
             }
         }
-        /// <summary>
-        /// Видимость включателя
+        /// <summary>* Видимость включателя
         /// </summary>
         public bool __fCheckVisible_
         {
             get { return _cCheck.Visible; }
             set { _cCheck.Visible = value; }
         }
-        /// <summary>
-        /// Статус включателя
+        /// <summary>* Статус включателя
         /// </summary>
         public bool __fCheckChecked_
         {
             get { return _cCheck.Checked; }
             set { _cCheck.Checked = value; }
         }
-        /// <summary>
-        /// Текст включателя
+        /// <summary>* Текст включателя
         /// </summary>
         public string __fCheckCaption_
         {
@@ -420,6 +394,6 @@ namespace nlControls
             set { _cCheck.__fCaption_ = value; }
         }
 
-        #endregion СВОЙСТВА
+        #endregion = СВОЙСТВА
     }
 }

@@ -3,20 +3,16 @@ using System.Windows.Forms;
 
 namespace nlControls
 {
-    /// <summary>
-    /// Класс 'crlComponentToolBarButtonMenu'
+    /// <summary>Класс 'crlComponentToolBarButtonMenu'
     /// </summary>
     /// <remarks>Компонент - кнопка с выпадающим меню</remarks>
     public class crlComponentToolBarButtonMenu : ToolStripDropDownButton
     {
         #region = ДИЗАЙНЕРЫ
 
-        /// <summary>
-        /// Конструктор
-        /// </summary>
         public crlComponentToolBarButtonMenu()
         {
-            _mObjectAssembly();
+            _mLoad();
         }
 
         #endregion = ДИЗАЙНЕРЫ
@@ -27,14 +23,13 @@ namespace nlControls
 
         #region Объект
 
-        /// <summary>
-        /// Сборка объекта
+        /// <summary>Загрузка компонента
         /// </summary>
-        protected virtual void _mObjectAssembly()
+        protected virtual void _mLoad()
         {
             // Отсутствует SuspendLayout
 
-            #region /// Настройка компонента
+            #region Настройка компонента
 
             DisplayStyle = ToolStripItemDisplayStyle.Image;
 
@@ -46,8 +41,7 @@ namespace nlControls
 
             return;
         }
-        /// <summary>
-        /// Выполняется при отпускании правой кнопки мыши
+        /// <summary>Выполняется при отпускании правой кнопки мыши
         /// </summary>
         /// <param name="pEvent"></param>
         protected override void OnMouseUp(MouseEventArgs pEvent)
@@ -65,15 +59,14 @@ namespace nlControls
 
             base.OnMouseUp(pEvent);
         }
-
+    
         #endregion Объект
 
-        #endregion Поведение
+        #endregion - Поведение
 
         #region - Процедуры
 
-        /// <summary>
-        /// Сборка выражения с параметрами и перевод выражения на язык интерфейса 
+        /// <summary>Сборка выражения с параметрами и перевод выражения на язык интерфейса 
         /// </summary>
         /// <param name="pString">Текст</param>
         /// <param name="pParameters">Список дополнительных парамметров</param>
@@ -83,36 +76,28 @@ namespace nlControls
             Text = crlApplication.__oTunes.__mTranslate(pString, pParameters);
         }
 
-        #endregion Процедуры
+        #endregion - Процедуры
 
-        #endregion МЕТОДЫ
+        #endregion = МЕТОДЫ
 
         #region = ПОЛЯ
 
         #region - Внутренние 
 
-        /// <summary>
-        /// Полное имя класса
+        /// <summary>Текст без перевода
+        /// </summary>
+        private string fTextWithOutTranslate = "";
+        /// <summary>Полное имя класса
         /// </summary>
         protected string _fClassNameFull = "";
 
-        #endregion Внутренние
-
-        #region - Служебные
-
-        /// <summary>
-        /// Текст без перевода
-        /// </summary>
-        private string fTextWithOutTranslate = "";
-
-        #endregion Служебные
+        #endregion - Внутренние
 
         #endregion ПОЛЯ
 
         #region = СВОЙСТВА
 
-        /// <summary>
-        /// Текст заголовка
+        /// <summary>Текст заголовка
         /// </summary>
         /// <remarks>Отображаемый текст переводиться на язык интерфейса. Возвращается не переведенный текст</remarks>
         public string __fCaption_
@@ -125,19 +110,17 @@ namespace nlControls
             }
         }
 
-        #endregion СВОЙСТВА
+        #endregion = СВОЙСТВА
 
         #region = СОБЫТИЯ
 
-        /// <summary>
-        /// Возникает при выборе правой кнопкой мыши
+        /// <summary>Возникает при выборе правой кнопкой мыши
         /// </summary>
         public event EventHandler __eMouseClickRight;
-        /// <summary>
-        /// Возникает при выборе левой кнопкой мыши
+        /// <summary>Возникает при выборе левой кнопкой мыши
         /// </summary>
         public event EventHandler __eMouseClickLeft;
 
-        #endregion СОБЫТИЯ
+        #endregion = СОБЫТИЯ
     }
 }

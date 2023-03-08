@@ -4,10 +4,8 @@ using System.Windows.Forms;
 
 namespace nlControls
 {
-    /// <summary>
-    /// Класс 'crlFormMessage'
+    /// <summary>Класс 'crlFormMessage'
     /// </summary>
-    /// <remarks>Форма для отображения ообщений пользователю</remarks>
     public class crlFormMessage : crlForm
     {
         #region = МЕТОДЫ
@@ -16,8 +14,7 @@ namespace nlControls
 
         #region Объект
 
-        /// <summary>
-        /// Сборка объекта
+        /// <summary>Построение объекта
         /// </summary>
         protected override void _mObjectAssembly()
         {
@@ -25,25 +22,18 @@ namespace nlControls
 
             base._mObjectAssembly();
 
-            #region /// Настройка компонента
-
             ControlBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             MinimumSize = new Size(500, 300);
             Controls.Add(_cAreaMessage);
-
-            #endregion Настройка компонента
 
             ResumeLayout();
 
             Type vType = this.GetType();
             Name = vType.Name;
             _fClassNameFull = vType.Namespace + "." + Name + ".";
-
-            return;
         }
-        /// <summary>
-        /// Выполняется при отпускании горячих клавиш
+        /// <summary>* Выполняется при отпускании горячих клавиш
         /// </summary>
         /// <param name="e"></param>
         protected override void OnKeyUp(KeyEventArgs e)
@@ -56,20 +46,19 @@ namespace nlControls
 
         #endregion Объект
 
-        #endregion Поведение
+        #endregion - Поведение
 
-        #endregion МЕТОДЫ
+        #endregion = МЕТОДЫ
 
         #region = ПОЛЯ
 
         #region - Компоненты
 
-        /// <summary>
-        /// Область для отображения сообщения
+        /// <summary>Область для построения фильтра
         /// </summary>
         public crlAreaMessage _cAreaMessage = new crlAreaMessage();
 
-        #endregion Компоненты
+        #endregion - Компоненты
 
         #endregion ПОЛЯ    
     }

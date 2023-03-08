@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace nlControls
 {
@@ -104,9 +103,9 @@ namespace nlControls
         /// </summary>
         private int _fPercent = 0;
 
-        #endregion Внутренние
+        #endregion - Внутренние
 
-        #region - Компненты
+        #region = Компненты
 
         /// <summary>
         /// Панель
@@ -133,7 +132,7 @@ namespace nlControls
         public int __pPercent_
         {
             get { return _fPercent; }
-            set
+            set 
             {
                 int vValue = value;
                 if (vValue <= 0)
@@ -152,7 +151,7 @@ namespace nlControls
         public bool __pNumbersVisible_
         {
             get { return cLabelLeft.Visible; }
-            set
+            set 
             {
                 cLabelLeft.Visible = value;
                 cLabelRight.Visible = cLabelLeft.Visible;

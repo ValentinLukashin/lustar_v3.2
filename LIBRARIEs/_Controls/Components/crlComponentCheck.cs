@@ -4,8 +4,7 @@ using System.Windows.Forms;
 
 namespace nlControls
 {
-    /// <summary>
-    /// Класс 'crlComponentCheck'
+    /// <summary>Класс 'crlComponentCheck'
     /// </summary>
     /// <remarks>Компонент - включатель</remarks>
     public class crlComponentCheck : CheckBox
@@ -33,7 +32,7 @@ namespace nlControls
         {
             SuspendLayout();
 
-            #region /// Настройка компонента
+            #region Настройка компонента
 
             AutoSize = true;
             BackColor = Color.Transparent;

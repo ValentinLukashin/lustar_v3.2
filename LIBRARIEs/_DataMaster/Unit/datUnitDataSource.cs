@@ -800,7 +800,7 @@ namespace nlDataMaster
                     vFileBody += "\t/// Класс '" + pPrefix + "Essence" + vTableName + "'" + CRLF;
                     vFileBody += "\t/// </summary>" + CRLF;
                     vFileBody += "\t/// <remarks>Сущность - " + __mTableDescription(vTableName) + "</remarks>" + CRLF;
-                    vFileBody += "\tpublic class " + pPrefix + "Essence" + vTableName + " : datEssence" + CRLF;
+                    vFileBody += "\tpublic class " + pPrefix + "Essence" + vTableName + " : datUnitEssence" + CRLF;
                     vFileBody += "\t{" + CRLF;
                     { // Класс
                         vFileBody += "\t\t#region = ДИЗАЙНЕРЫ" + CRLF + CRLF;

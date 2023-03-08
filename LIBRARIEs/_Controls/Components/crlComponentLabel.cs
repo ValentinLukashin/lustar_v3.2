@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -7,7 +9,7 @@ namespace nlControls
     /// <summary>
     /// Класс 'crlComponentLabel'
     /// </summary>
-    /// <remarks>Компонент - Label</remarks>
+    /// <remarks>Компонент - надпись</remarks>
     public class crlComponentLabel : Label
     {
         #region = ДИЗАЙНЕРЫ
@@ -39,7 +41,7 @@ namespace nlControls
             BackColor = Color.Transparent;
             ForeColor = crlApplication.__oInterface.__fColorText;
             fLabelType = LABELTYPES.Normal;
-
+            
             #endregion Настройка компонента
 
             ResumeLayout();
@@ -71,8 +73,6 @@ namespace nlControls
             }
 
             base.OnMouseUp(pEvent);
-
-            return;
         }
 
         #endregion Поведение
@@ -96,16 +96,7 @@ namespace nlControls
 
         #region = ПОЛЯ
 
-        #region - Внутренние
-
-        /// <summary>
-        /// Полное имя класса
-        /// </summary>
-        protected string _fClassNameFull = "";
-
-        #endregion Внутренние
-
-        #region - Служебные
+        #region = Внутренние
 
         /// <summary>
         /// Разрешение обрабатывать клики мыши
@@ -123,6 +114,21 @@ namespace nlControls
         /// Строка заголовка без перевода
         /// </summary>
         private string fTextWithOutTranslate = "";
+
+        #endregion Внутренние
+
+        #region - Компоненты
+
+        private System.ComponentModel.IContainer components = null;
+
+        #endregion Компоненты
+
+        #region = Служебные
+
+        /// <summary>
+        /// Полное имя класса
+        /// </summary>
+        protected string _fClassNameFull = "";
 
         #endregion Служебные
 

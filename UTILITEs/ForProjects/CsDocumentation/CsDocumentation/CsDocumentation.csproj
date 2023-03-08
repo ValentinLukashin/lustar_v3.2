@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{722414A8-0AD1-4F95-85DD-C0C9B29F2CBF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CsDocumentation</RootNamespace>
+    <RootNamespace>naCsDocumentation</RootNamespace>
     <AssemblyName>CsDocumentation</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -52,7 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="csdBegin.cs" />
+    <Compile Include="FORMs\csdFormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -62,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +79,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\LIBRARIEs\_Application\_Application.csproj">
+      <Project>{59659e31-833f-449c-b171-f00dfddbfa15}</Project>
+      <Name>_Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\LIBRARIEs\_Controls\_Controls.csproj">
+      <Project>{ac81e8c0-5a55-4843-830c-aee2dae5e343}</Project>
+      <Name>_Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\LIBRARIEs\_DataMaster\_DataMaster.csproj">
+      <Project>{50892ed9-a10f-4c21-b1f9-b6413ec5fb0d}</Project>
+      <Name>_DataMaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\LIBRARIEs\_ResourcesImages\_ResourcesImages.csproj">
+      <Project>{124ef8f7-e3c3-4e98-a4ba-144ee5cfa739}</Project>
+      <Name>_ResourcesImages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_CsDocumentation\_CsDocumentation.csproj">
+      <Project>{0f71c766-7491-44eb-a2d5-5ad465a33bee}</Project>
+      <Name>_CsDocumentation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

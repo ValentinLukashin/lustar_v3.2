@@ -31,6 +31,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -43,10 +58,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\crlComponentBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentChar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentCharMask.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\crlComponentCheck.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Components\crlComponentCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentDateTime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentGridFolder.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\crlComponentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentListBoxChecked.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentNumberDecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentNumberInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentOption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\crlComponentPageBlock.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Components\crlComponentPanel.cs">
@@ -61,6 +130,9 @@
     <Compile Include="Components\crlComponentSplitter.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Components\crlComponentText.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\crlComponentToolBar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -70,10 +142,115 @@
     <Compile Include="Components\crlComponentToolBarButtonMenu.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Components\crlComponentTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CONTROLs\Areas\crlArea.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaDocumentRecord.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaEmailReceive.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaEmailSend.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaFilter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaGridFolder.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CONTROLs\Areas\crlAreaMessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaOperations.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaRecord.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaReportPreview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Areas\crlAreaTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Block\crlBlockInputs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputChar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputComboBool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputComboList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputComboPath.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputDateTime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputDateTimePeriod.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputFormSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputListBoxChecked.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputNumberDecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputNumberInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputPath.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputPhone.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Inputs\crlInputTitle.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CONTROLs\Panels\crlPanelStatus.cs">
@@ -87,7 +264,55 @@
     <Compile Include="FORMs\crlForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FORMs\Data\crlFormDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormDocumentRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormGridFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Data\crlFormTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Service\crlFormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Service\crlFormEmailRecipientsTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Service\crlFormEmailSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Service\crlFormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FORMs\Service\crlFormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Service\crlFormReportPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Service\crlFormSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMs\Service\crlFormTunes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,9 +320,6 @@
     <Compile Include="Types\crlTypeFont.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CONTROLs\Block\" />
-    <Folder Include="CONTROLs\Inputs\" />
-    <Folder Include="FORMs\Data\" />
     <Folder Include="_Documentation\" />
     <Folder Include="_Help\" />
   </ItemGroup>
@@ -109,6 +331,10 @@
     <ProjectReference Include="..\_DataMaster\_DataMaster.csproj">
       <Project>{50892ED9-A10F-4C21-B1F9-B6413EC5FB0D}</Project>
       <Name>_DataMaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_Reports\_Reports.csproj">
+      <Project>{56b4bb2a-dfef-456a-a93b-507840684d04}</Project>
+      <Name>_Reports</Name>
     </ProjectReference>
     <ProjectReference Include="..\_ResourcesImages\_ResourcesImages.csproj">
       <Project>{124ef8f7-e3c3-4e98-a4ba-144ee5cfa739}</Project>

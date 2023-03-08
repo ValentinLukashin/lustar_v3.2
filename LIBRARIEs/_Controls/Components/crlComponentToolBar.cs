@@ -11,15 +11,12 @@ namespace nlControls
     {
         #region = ДИЗАЙНЕРЫ
 
-        /// <summary>
-        /// Конструктор
-        /// </summary>
         public crlComponentToolBar()
         {
-            _mObjectAssembly();
+            _mLoad();
         }
 
-        #endregion ДИЗАЙНЕРЫ
+        #endregion = ДИЗАЙНЕРЫ
 
         #region = МЕТОДЫ
 
@@ -27,15 +24,17 @@ namespace nlControls
 
         #region Объект
 
-        /// <summary>
-        /// Сборка объекта
+        /// <summary>Загрузка компонента
         /// </summary>
-        protected virtual void _mObjectAssembly()
+        protected virtual void _mLoad()
         {
+            Type vType = this.GetType();
+            Name = vType.Name;
+            _fClassNameFull = vType.Namespace + "." + Name + ".";
 
             SuspendLayout();
 
-            #region /// Настройка компонента
+            #region Настройка компонента
 
             BackColor = Color.Transparent;
             ImageScalingSize = new Size(32, 32);
@@ -44,17 +43,11 @@ namespace nlControls
             #endregion Настройка компонента
 
             ResumeLayout(false);
-
-            Type vType = this.GetType();
-            Name = vType.Name;
-            _fClassNameFull = vType.Namespace + "." + Name + ".";
-
-            return;
         }
 
         #endregion Объект
 
-        #endregion Поведение
+        #endregion - Поведение
 
         #endregion = МЕТОДЫ
 
@@ -62,12 +55,11 @@ namespace nlControls
 
         #region - Внутренние 
 
-        /// <summary>
-        /// Полное имя класса
+        /// <summary>Полное имя класса
         /// </summary>
         protected string _fClassNameFull = "";
 
-        #endregion Внутренние
+        #endregion - Внутренние
 
         #endregion ПОЛЯ
     }

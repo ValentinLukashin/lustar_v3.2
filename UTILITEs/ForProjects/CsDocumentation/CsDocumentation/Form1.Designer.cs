@@ -1,4 +1,4 @@
-﻿namespace CsDocumentation
+﻿namespace naCsDocumentation
 {
     partial class Form1
     {
