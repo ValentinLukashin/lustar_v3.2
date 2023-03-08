@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,10 @@
     <ProjectReference Include="..\_Application\_Application.csproj">
       <Project>{59659e31-833f-449c-b171-f00dfddbfa15}</Project>
       <Name>_Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_Reports\_Reports.csproj">
+      <Project>{56b4bb2a-dfef-456a-a93b-507840684d04}</Project>
+      <Name>_Reports</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
