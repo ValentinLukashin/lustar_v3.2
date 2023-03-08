@@ -199,6 +199,15 @@
     <Compile Include="CONTROLs\Areas\crlAreaTree.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CONTROLs\Block\crlBlockArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Block\crlBlockFormMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Block\crlBlockFormSeachList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CONTROLs\Block\crlBlockInputs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -251,6 +260,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CONTROLs\Inputs\crlInputTitle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Panels\crlPanelData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CONTROLs\Panels\crlPanelMenuTree.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CONTROLs\Panels\crlPanelStatus.cs">

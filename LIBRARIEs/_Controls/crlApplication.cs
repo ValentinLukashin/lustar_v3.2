@@ -187,6 +187,20 @@ namespace nlControls
         /// </summary>
         Folder
     }
+    /// <summary>
+    /// Виды привязки компонентов
+    /// </summary>
+    public enum SCALETYPEs
+    {
+        /// <summary>
+        /// Привязать к форме
+        /// </summary>
+        Anchor,
+        /// <summary>
+        /// Фиксированный размер
+        /// </summary>
+        Fixed
+    }
 
     #endregion ПЕРЕЧИСЛЕНИЯ
 

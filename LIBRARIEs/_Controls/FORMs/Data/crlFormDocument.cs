@@ -3,7 +3,8 @@ using System.Windows.Forms;
 
 namespace nlControls
 {
-    /// <summary>Класс 'crlFormDocument'
+    /// <summary>
+    /// Класс 'crlFormDocument'
     /// </summary>
     /// <remarks>Абстактный класс формы для построения форм для правки документов</remarks>
     public abstract class crlFormDocument : crlForm
@@ -91,11 +92,12 @@ namespace nlControls
 
         #region - Компоненты
 
-        /// <summary>Область для правки документов
+        /// <summary>
+        /// Область для правки документов
         /// </summary>
         public crlAreaDocument __cAreaDocument = new crlAreaDocument();
 
-        #endregion - Компоненты
+        #endregion Компоненты
 
         #endregion ПОЛЯ
     }

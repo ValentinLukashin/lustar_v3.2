@@ -292,7 +292,8 @@ namespace nlControls
             vToolTip.Show(string.Empty, pObject, 1000); // Для правильного позиционирования облака сообщения
             vToolTip.Show(pMessage, pObject, pObject.Width, pObject.Height);
         }
-        /// <summary>Сборка выражения с параметрами и перевод выражения на язык интерфейса 
+        /// <summary>
+        /// Сборка выражения с параметрами и перевод выражения на язык интерфейса 
         /// </summary>
         /// <param name="pString">Текст</param>
         /// <param name="pParameters">Список дополнительных парамметров</param>
@@ -301,7 +302,8 @@ namespace nlControls
             fTextWithOutTranslate = String.Format(pString, pParameters);
             Text = crlApplication.__oTunes.__mTranslate(pString, pParameters);
         }
-        /// <summary>Вызов топика помощи связанного с формой
+        /// <summary>
+        /// Вызов топика помощи связанного с формой
         /// </summary>
         public void __mHelp()
         {

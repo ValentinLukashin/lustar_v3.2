@@ -41,10 +41,7 @@ namespace naCsDocumentation
                 _cFolderScan.__mItemsSaveToFile("scan");
 
                 csdDocumenting vDocumating = new csdDocumenting();
-                //vDocumating.__fHeader2 = Convert.ToBoolean(_cHeader2Handle.__fValue_);
-                //vDocumating.__fHeader4 = Convert.ToBoolean(_cHeader4Handle.__fValue_);
                 vDocumating.__mDocumentingProject(_cFolderScan.__fValue_.ToString().Trim());
-                //vDocumating.__mDocumentationToFile(Path.Combine(_cFolderScan.__fValue_.ToString().Trim(), "DOCUMENTATION"));
             }
             else
             {

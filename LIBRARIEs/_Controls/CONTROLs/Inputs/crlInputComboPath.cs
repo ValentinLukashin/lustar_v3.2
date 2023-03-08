@@ -15,10 +15,10 @@ namespace nlControls
     {
         #region = МЕТОДЫ
 
-        #region . Поведение
+        #region - Поведение
 
         /// <summary>
-        /// * Сборка объекта
+        /// Сборка объекта
         /// </summary>
         protected override void _mObjectAssembly()
         {
@@ -26,13 +26,13 @@ namespace nlControls
 
             base._mObjectAssembly();
 
-            #region Размещение компонентов
+            #region /// Размещение компонентов
 
             Panel2.Controls.Add(_cInput);
 
             #endregion Размещение компонентов
 
-            #region Настройка компонентов
+            #region /// Настройка компонентов
 
             // _cLabelCaption
             {
@@ -43,10 +43,9 @@ namespace nlControls
             }
             // _cInput
             {
-//                _cInput.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right;
                 _cInput.Location = new Point(0, 0);
                 _cInput.TextChanged += mInput_TextChanged;
-//                _cInput.Width = Panel2.ClientSize.Width;
+                _cInput.__fScaleType_ = SCALETYPEs.Anchor;
                 _cInput.__eValueInteractiveChanged += mInput_eValueChangedByUser;
                 _cInput.__eValueProgrammaticChanged += mInput_eValueChangedByProgram;
             }
@@ -59,7 +58,7 @@ namespace nlControls
         }
 
         /// <summary>
-        /// * Возникает при клике левой клавиши мыши по надписи-заголовку
+        /// Возникает при клике левой клавиши мыши по надписи-заголовку
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -71,7 +70,7 @@ namespace nlControls
                 vOpenFileDialog.InitialDirectory = _cInput.__fValue_.ToString();
                 if (vOpenFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    _cInput.__mItemAdd(vOpenFileDialog.FileName);
+                    _cInput.__mItemAdd(vOpenFileDialog.FileName.Trim());
                     _cInput.__mDataRefresh();
                 }
             }
@@ -81,13 +80,13 @@ namespace nlControls
                 vFolderBrowserDialog.ShowNewFolderButton = true;
                 if (vFolderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
-                    _cInput.__mItemAdd(vFolderBrowserDialog.SelectedPath);
+                    _cInput.__mItemAdd(vFolderBrowserDialog.SelectedPath.Trim());
                     _cInput.__mDataRefresh();
                 }
             }
         }
         /// <summary>
-        /// * Возникает при клике правой клавиши мыши по надписи-заголовку
+        /// Возникает при клике правой клавиши мыши по надписи-заголовку
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -96,7 +95,7 @@ namespace nlControls
             _cInput.__fValue_ = "";
         }
         /// <summary>
-        /// * Выполняется при изменении введенных данных
+        /// Выполняется при изменении введенных данных
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -107,7 +106,7 @@ namespace nlControls
             return;
         }
         /// <summary>
-        /// * Выполняется при изменении введенных данных программой
+        /// Выполняется при изменении введенных данных программой
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -117,7 +116,7 @@ namespace nlControls
                 __eValueChangedByProgram(this, new EventArgs());
         }
         /// <summary>
-        /// * Выполняется при изменении введенных данных пользователем
+        /// Выполняется при изменении введенных данных пользователем
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -133,7 +132,7 @@ namespace nlControls
         #region - Процедуры
 
         /// <summary>
-        /// * Обновление отображаемых данных
+        /// Обновление отображаемых данных
         /// </summary>
         public virtual void __mDataRefresh()
         {
@@ -143,7 +142,7 @@ namespace nlControls
             return;
         }
         /// <summary>
-        ///  * Перевод фокуса на поле ввода
+        /// Перевод фокуса на поле ввода
         /// </summary>
         public override void __mInputFocus()
         {
@@ -152,7 +151,7 @@ namespace nlControls
             return;
         }
         /// <summary>
-        /// * Добавление значения в конец списка значений компонента
+        /// Добавление значения в конец списка значений компонента
         /// </summary>
         /// <param name="pValue">Добавляемое значение</param>
         /// <returns>Идентификатор добавляемой записи, положительный - из таблицы, отрицательный - назначаемый компонентом</returns>
@@ -161,7 +160,7 @@ namespace nlControls
             return _cInput.__mItemAdd(pValue);
         }
         /// <summary>
-        /// * Добавление списка новых значений
+        /// Добавление списка новых значений
         /// </summary>
         /// <param name="pValueS">Список значений в порядке определения индексов</param>
         /// <returns>[true] - Значение добавлено, иначе - [false]</returns>
@@ -170,7 +169,7 @@ namespace nlControls
             return _cInput.__mItemsAdd(pValueS);
         }
         /// <summary>
-        /// * Добавление списка новых значений
+        /// Добавление списка новых значений
         /// </summary>
         /// <param name="pValueS">Список значений в порядке определения индексов</param>
         /// <returns>[true] - Значение добавлено, иначе - [false]</returns>
@@ -179,14 +178,14 @@ namespace nlControls
             return _cInput.__mItemsAdd(pValueS);
         }
         /// <summary>
-        /// * Очистка всех данных и подготовка к вводу новых данных
+        /// Очистка всех данных и подготовка к вводу новых данных
         /// </summary>
         public virtual void __mItemsClear()
         {
             _cInput.__mItemsClear();
         }
         /// <summary>
-        /// * Загрузка данных из сущности данных
+        /// Загрузка данных из сущности данных
         /// </summary>
         /// <param name="pWhereExpression">Выражение выбора получаемых данных</param>
         /// <param name="pOrderExpression">Выражение сортировки получаемых данных</param>
@@ -196,7 +195,7 @@ namespace nlControls
             return _cInput.__mItemsEssenceLoad(pWhereExpression, pOrderExpression);
         }
         /// <summary>
-        /// * Загрузка данных из файла
+        /// Загрузка данных из файла
         /// </summary>
         /// <param name="pPrefix">Префикс для выбора данных из файла настроек форм</param>
         public virtual void __mItemsLoadFromFile(string pPrefix)
@@ -215,7 +214,7 @@ namespace nlControls
             __mDataRefresh();
         }
         /// <summary>
-        /// * Загрузка данных из {DataTable}, со столбцами clu(идентификатор) и des(название)
+        /// Загрузка данных из {DataTable}, со столбцами clu(идентификатор) и des(название)
         /// </summary>
         /// <param name="pDataTable">таблица</param>
         /// <returns>[true] - данные загружены, иначе - [false]</returns>
@@ -224,7 +223,7 @@ namespace nlControls
             return _cInput.__mItemsLoad(pDataTable);
         }
         /// <summary>
-        /// * Сохранение данных в файла
+        /// Сохранение данных в файла
         /// </summary>
         /// <param name="pPrefix">Префикс для выбора данных из файла настроек форм</param>
         public virtual void __mItemsSaveToFile(string pPrefix)
@@ -249,7 +248,7 @@ namespace nlControls
             }
         }
         /// <summary>
-        /// * Получение индекса значения по идентификатору значения
+        /// Получение индекса значения по идентификатору значения
         /// </summary>
         /// <param name="pClue">Идентификатор записи</param>
         /// <returns></returns>
@@ -258,7 +257,7 @@ namespace nlControls
             return _cInput.__mGetIndexByClue(pClue);
         }
 
-        #endregion - Процедуры
+        #endregion Процедуры
 
         #endregion МЕТОДЫ
 
@@ -267,13 +266,9 @@ namespace nlControls
         #region - Атрибуты
 
         /// <summary>
-        /// * Вид пути обрабатываемый компонентом
+        /// Вид пути обрабатываемый компонентом
         /// </summary>
         public PATHTYPES __fPathType = PATHTYPES.File;
-        /// <summary>
-        /// - Вид надписи перед переходом в недоступный режим
-        /// </summary>
-        private LABELTYPES fLabelCaptionStatus = LABELTYPES.Normal;
 
         #endregion Атрибуты
 
@@ -286,12 +281,21 @@ namespace nlControls
 
         #endregion Компоненты
 
+        #region - Служебные
+
+        /// <summary>
+        /// Вид надписи перед переходом в недоступный режим
+        /// </summary>
+        private LABELTYPES fLabelCaptionStatus = LABELTYPES.Normal;
+
+        #endregion Служебные
+
         #endregion ПОЛЯ
 
         #region = СВОЙСТВА
 
         /// <summary>
-        /// * Доступность контрола
+        /// Доступность контрола
         /// </summary>
         public override bool __fEnabled_
         {
@@ -315,7 +319,7 @@ namespace nlControls
             }
         }
         /// <summary>
-        /// * Обязательность заполнения
+        /// Обязательность заполнения
         /// </summary>
         public override FILLTYPES __fFillType_
         {
@@ -323,7 +327,7 @@ namespace nlControls
             set { _cInput.__fFillType_ = value; }
         }
         /// <summary>
-        /// * Значение поля ввода
+        /// Значение поля ввода
         /// </summary>
         public override object __fValue_
         {
@@ -335,7 +339,7 @@ namespace nlControls
             }
         }
         /// <summary>
-        /// * Вид надписи
+        /// Вид надписи
         /// </summary>
         public LABELTYPES __fLabelType_
         {
@@ -348,11 +352,11 @@ namespace nlControls
         #region = СОБЫТИЯ
 
         /// <summary>
-        /// * Возникает при ручном изменении данных
+        /// Возникает при ручном изменении данных
         /// </summary>
         public event EventHandler __eValueChangedByUser;
         /// <summary>
-        /// * Возникает при изменении данных программой
+        /// Возникает при изменении данных программой
         /// </summary>
         public event EventHandler __eValueChangedByProgram;
 

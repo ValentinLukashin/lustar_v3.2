@@ -221,16 +221,24 @@ namespace nlControls
             int vWidth = 20; // Устанавливаемая ширина объекта
             int vWidthFont = 0; // Ширина установленного шрифта
 
-            for (int vAmount = 0; vAmount < fItemS.Count; vAmount++)
+            if (fScaleType == SCALETYPEs.Fixed)
             {
-                int vSymbolsCount = fItemS[vAmount].__fValue_.ToString().Length;
-                if (vSymbolsCount <= 3)
-                    vSymbolsCount = vSymbolsCount + 1;
-                vWidthFont = Convert.ToInt32(crlTypeFont.__mMeasureText(vSymbolsCount, this.Font).Width);
-                if (vWidthFont > vWidth)
-                    vWidth = vWidthFont + SystemInformation.VerticalScrollBarWidth + crlInterface.__fIntervalHorizontal;
+                for (int vAmount = 0; vAmount < fItemS.Count; vAmount++)
+                {
+                    int vSymbolsCount = fItemS[vAmount].__fValue_.ToString().Length;
+                    if (vSymbolsCount <= 3)
+                        vSymbolsCount = vSymbolsCount + 1;
+                    vWidthFont = Convert.ToInt32(crlTypeFont.__mMeasureText(vSymbolsCount, this.Font).Width);
+                    if (vWidthFont > vWidth)
+                        vWidth = vWidthFont + SystemInformation.VerticalScrollBarWidth + crlInterface.__fIntervalHorizontal;
+                }
+                Width = vWidth + 10;
             }
-            Width = vWidth + 10;
+            else
+            {
+                Width = Parent.Width - crlInterface.__fIntervalHorizontal * 2;
+                Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
+            }
 
             return;
         }
@@ -241,8 +249,7 @@ namespace nlControls
 
         #region = ПОЛЯ
 
-        #region = Атрибуты
-
+        #region - Атрибуты
 
         /// <summary>
         /// Полное имя класса
@@ -251,7 +258,7 @@ namespace nlControls
 
         #endregion Атрибуты
 
-        #region = Внутренние
+        #region - Внутренние
 
         /// <summary>
         /// Сущность данных
@@ -260,7 +267,7 @@ namespace nlControls
 
         #endregion Внутренние
 
-        #region = Служебные
+        #region - Служебные
 
         /// <summary>
         /// Счетчик внутренних идентификаторов
@@ -278,6 +285,10 @@ namespace nlControls
         /// Список отображаемых данных
         /// </summary>
         private List<appUnitItem> fItemS = new List<appUnitItem>();
+        /// <summary>
+        /// Вид привязки компонента
+        /// </summary>
+        private SCALETYPEs fScaleType = SCALETYPEs.Fixed;
 
         #endregion Служебные
 
@@ -382,6 +393,18 @@ namespace nlControls
                     return fItemS[SelectedIndex].__fValue_.ToString();
                 else
                     return "";
+            }
+        }
+        /// <summary>
+        /// Вид привязки компонента
+        /// </summary>
+        public SCALETYPEs __fScaleType_
+        {
+            get { return fScaleType; }
+            set 
+            { 
+                fScaleType = value;
+                mWidthCalculate();
             }
         }
 

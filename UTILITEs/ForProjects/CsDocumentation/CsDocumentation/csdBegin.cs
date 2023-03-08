@@ -14,7 +14,7 @@ namespace naCsDocumentation
         {
             Application.SetCompatibleTextRenderingDefault(false);
 
-            csdApplication.__fFileNameHelp = "CsDocumentation";
+            csdApplication.__fFileNameHelp = "CsDocumentation.chm";
             csdApplication.__fPrefix = "csd";
 
             if (csdApplication.__oEventsHandler.__mBegin())
