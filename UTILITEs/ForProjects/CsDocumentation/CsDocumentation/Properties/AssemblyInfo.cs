@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("CsDocumentation")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Документирование проектов C#")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Lustar")]
 [assembly: AssemblyProduct("CsDocumentation")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Lustar")]
 [assembly: AssemblyCulture("")]
 
 // Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2023.3.8.1")]
-[assembly: AssemblyFileVersion("2023.3.8.1")]
+[assembly: AssemblyVersion("2023.3.9.1")]
+[assembly: AssemblyFileVersion("2023.3.9.1")]

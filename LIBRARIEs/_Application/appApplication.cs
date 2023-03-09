@@ -35,6 +35,24 @@ namespace nlApplication
         User
     }
     /// <summary>
+    /// Вид элемента файловой системы
+    /// </summary>
+    public enum FILESYSTEMTYPEs
+    {
+        /// <summary>
+        /// Файл
+        /// </summary>
+        File,
+        /// <summary>
+        /// Папка
+        /// </summary>
+        Folder,
+        /// <summary>
+        /// Не определено
+        /// </summary>
+        None
+    }
+    /// <summary>
     /// Виды сообщений
     /// </summary>
     public enum MESSAGESTYPES

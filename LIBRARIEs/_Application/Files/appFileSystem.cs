@@ -49,6 +49,29 @@ namespace nlApplication
 
         #region - Процедуры
 
+        /// <summary>
+        /// Определяет вид элемента файловой системы
+        /// </summary>
+        public FILESYSTEMTYPEs __mFileSystemType(string pPath)
+        {
+            FILESYSTEMTYPEs vReturn = FILESYSTEMTYPEs.None;
+            FileInfo fi = new FileInfo(pPath);
+            if (fi.Exists)
+            {
+                vReturn = FILESYSTEMTYPEs.File;
+            }
+            else
+            {
+                DirectoryInfo di = new DirectoryInfo(pPath);
+                if (di.Exists)
+                {
+                    vReturn = FILESYSTEMTYPEs.Folder;
+                }
+            }
+
+            return vReturn;
+        }
+
         #region Файлы в папках
 
         /// <summary>
