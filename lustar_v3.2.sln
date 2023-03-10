@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_CsDocumentation", "UTILITE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsDocumentation", "UTILITEs\ForProjects\CsDocumentation\CsDocumentation\CsDocumentation.csproj", "{722414A8-0AD1-4F95-85DD-C0C9B29F2CBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailRobot", "UTILITEs\ForApplications\MailRobot\MailRobot.csproj", "{635673A0-3F3B-4714-B55E-ED22EBABBDAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +217,10 @@ Global
 		{722414A8-0AD1-4F95-85DD-C0C9B29F2CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{722414A8-0AD1-4F95-85DD-C0C9B29F2CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{722414A8-0AD1-4F95-85DD-C0C9B29F2CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635673A0-3F3B-4714-B55E-ED22EBABBDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635673A0-3F3B-4714-B55E-ED22EBABBDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635673A0-3F3B-4714-B55E-ED22EBABBDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635673A0-3F3B-4714-B55E-ED22EBABBDAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,6 +263,7 @@ Global
 		{152CD5C2-FF1F-4F55-8FDE-EF4BFB133EB7} = {5B6B34A0-E421-451F-A141-6FB92B8DF6B1}
 		{0F71C766-7491-44EB-A2D5-5AD465A33BEE} = {152CD5C2-FF1F-4F55-8FDE-EF4BFB133EB7}
 		{722414A8-0AD1-4F95-85DD-C0C9B29F2CBF} = {152CD5C2-FF1F-4F55-8FDE-EF4BFB133EB7}
+		{635673A0-3F3B-4714-B55E-ED22EBABBDAA} = {66814170-7017-41EF-A60F-7F413404A4B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06A376C8-1D3F-493F-A2CD-0EB644F1D27E}

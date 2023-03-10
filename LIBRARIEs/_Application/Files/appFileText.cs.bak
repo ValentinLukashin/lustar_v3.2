@@ -63,7 +63,7 @@ namespace nlApplication
             return vReturn;
         }
         /// <summary>
-        /// Поиск выражения в файле
+        /// * Поиск выражения в файле
         /// </summary>
         /// <param name="pFilePath">Путь и имя проверяемого файла</param>
         /// <param name="pSearchedExpression">Искомое строчное выражение</param>
@@ -89,7 +89,7 @@ namespace nlApplication
             return vReturn;
         }
         /// <summary>
-        /// Запись строки в конец файла
+        /// * Запись строки в конец файла
         /// </summary>
         /// <remarks>Строка добавляется в файл с новой строки</remarks>
         /// <param name="pFilePath">Путь и имя файла в который идет запись</param>
