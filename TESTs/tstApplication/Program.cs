@@ -14,6 +14,8 @@ namespace tstApplication
     {
         static tstTest fTest = new tstTest(); // Объект для проверки результатов тестирования
 
+        // VIA - проверка связи!!!
+
         static void Main(string[] args)
         {
             if (tstApplication.__oEventsHandler.__mBegin() == true)
